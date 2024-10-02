@@ -29,14 +29,28 @@ function App() {
               <th>price</th>
               <th>description</th>
               <th>category</th>
-              <th>image</th>
+              <th>img image</th>
               <th>rating</th>
             </tr>
           </thead>
           <tbody>
             {/* row 1 */}
             {/* <tr className="bg-base-200"> */}
-              {prod.map(item => item)}
+              {prod.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <td>{item.id}</td>
+                    <td>{item.title}</td>
+                    <td>{item.price}</td>
+                    <td>{item.description}</td>
+                    <td><img src={item.image}/></td>
+                    <td>{item.rating}</td>
+
+
+                    <td>Blue</td>
+                  </div>
+                )
+              } )}
               {/* <th></th>
               <td>Cy Ganderton</td>
               <td>Quality Control Specialist</td>
