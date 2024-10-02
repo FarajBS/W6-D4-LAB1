@@ -21,18 +21,7 @@ function App() {
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
-          <thead>
-            <tr>
-              <th></th>
-              <th>id</th>
-              <th>title</th>
-              <th>price</th>
-              <th>description</th>
-              <th>category</th>
-              <th>img image</th>
-              <th>rating</th>
-            </tr>
-          </thead>
+
           <tbody>
             {/* row 1 */}
             {/* <tr className="bg-base-200"> */}
@@ -44,10 +33,7 @@ function App() {
                     <td>{item.price}</td>
                     <td>{item.description}</td>
                     <td><img src={item.image}/></td>
-                    <td>{item.rating}</td>
-
-
-                    <td>Blue</td>
+                    {/* <td>{item.rating}</td> */}
                   </div>
                 )
               } )}
